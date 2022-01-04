@@ -3,7 +3,7 @@ pipeline
 agent any
 stages{
 	stage('Build Application'){
-	sreps{
+	steps{
 	bat 'mvn clean install'
 	}
 	}
