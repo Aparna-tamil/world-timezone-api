@@ -16,7 +16,7 @@ stages{
 	
 	stage('Perform Regression Testing'){
 	steps{
-	bat 'newman run C:\\Users\\abarnapp\\Postman\\WorldTimeZone.postman_collection.json --disable-unicode'
+	bat 'C:\\Users\\abarnapp\\AppData\\Roaming\\npm\\newman run C:\\Users\\abarnapp\\Postman\\WorldTimeZone.postman_collection.json --disable-unicode'
 	}
 	}
 
