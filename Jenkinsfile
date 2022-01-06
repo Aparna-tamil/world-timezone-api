@@ -8,6 +8,13 @@ stages{
 	}
 	}
 	
+	stage('Munit Testing Application'){
+	steps{
+	bat 'mvn clean install'
+	}
+	}
+	
+	
 	stage('Deploy Application to Cloudhub'){
 	steps{
 	bat 'mvn package deploy -DmuleDeploy'
